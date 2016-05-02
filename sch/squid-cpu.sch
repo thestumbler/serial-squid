@@ -1,0 +1,998 @@
+EESchema Schematic File Version 2
+LIBS:my-maxim
+LIBS:my-conn
+LIBS:my-gates
+LIBS:my-display
+LIBS:my-cmos4000
+LIBS:my-osc
+LIBS:my-interface
+LIBS:my-74xx
+LIBS:my-ftdi
+LIBS:my-microchip
+LIBS:my-regul
+LIBS:my-power
+LIBS:my-nxp
+LIBS:my-device
+LIBS:squid-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 11
+Title "SERIAL SQUID"
+Date "2016-05-02"
+Rev "-"
+Comp "Tratech Solutions, Inc., Seoul, South Korea"
+Comment1 "Email: rclott@tratechsol.com"
+Comment2 "Author: Chris Lott"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RES R49
+U 1 1 571894F8
+P 3500 1000
+F 0 "R49" H 3550 1050 50  0000 L CNN
+F 1 "10K" H 3550 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3500 1000 50  0001 C CNN
+F 3 "" H 3500 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    3500 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RES R50
+U 1 1 571897E1
+P 3750 1000
+F 0 "R50" H 3800 1050 50  0000 L CNN
+F 1 "10K" H 3800 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3750 1000 50  0001 C CNN
+F 3 "" H 3750 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    3750 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RES R48
+U 1 1 57189A26
+P 3250 1000
+F 0 "R48" H 3300 1050 50  0000 L CNN
+F 1 "10K" H 3300 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3250 1000 50  0001 C CNN
+F 3 "" H 3250 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    3250 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RES R47
+U 1 1 57189ED7
+P 3000 1000
+F 0 "R47" H 3050 1050 50  0000 L CNN
+F 1 "10K" H 3050 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3000 1000 50  0001 C CNN
+F 3 "" H 3000 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    3000 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR057
+U 1 1 57189FED
+P 4650 700
+F 0 "#PWR057" H 4650 550 50  0001 C CNN
+F 1 "+3.3V" H 4650 840 50  0000 C CNN
+F 2 "" H 4650 700 50  0000 C CNN
+F 3 "" H 4650 700 50  0000 C CNN
+	1    4650 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES R45
+U 1 1 5718A9DD
+P 2750 1000
+F 0 "R45" H 2800 1050 50  0000 L CNN
+F 1 "10K" H 2800 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2750 1000 50  0001 C CNN
+F 3 "" H 2750 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    2750 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Crystal_Small Y1
+U 1 1 57190F5E
+P 3850 6050
+F 0 "Y1" V 3850 5900 50  0000 C CNN
+F 1 "12MHz" V 3850 6300 50  0000 C CNN
+F 2 "" H 3850 6050 50  0001 C CNN
+F 3 "" H 3850 6050 50  0000 C CNN
+F 4 "20" H 0   0   50  0001 C CNN "FN"
+F 5 "OSC" H 0   0   50  0001 C CNN "Family"
+F 6 "CTS FREQUENCY" H 0   0   50  0001 C CNN "MFR"
+F 7 "445C35A12M00000" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "CTX1435CT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "12.000MHz" H 0   0   50  0001 C CNN "Value"
+	1    3850 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L LPC1769-SQUID U17
+U 1 1 571BA83E
+P 5700 3700
+F 0 "U17" H 4700 6500 50  0000 C CNN
+F 1 "LPC1769" H 6750 500 50  0000 R TNN
+F 2 "LQFP100" H 5875 3475 50  0000 C CNN
+F 3 "" H 5700 3700 50  0000 C CNN
+F 4 "1" H 0   0   50  0001 C CNN "FN"
+F 5 "IC" H 0   0   50  0001 C CNN "Family"
+F 6 "NXP SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFR"
+F 7 "LPC1769FBD100" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "568-4966-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "LPC1769" H 0   0   50  0001 C CNN "Value"
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 571BCD2E
+P 3400 5900
+F 0 "C10" V 3450 5950 50  0000 L CNN
+F 1 "18pF" V 3450 5650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 5900 50  0001 C CNN
+F 3 "" H 3400 5900 50  0000 C CNN
+F 4 "28" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C180J5GACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1112-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "18pF" H 0   0   50  0001 C CNN "Value"
+	1    3400 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 571BCE58
+P 3400 6200
+F 0 "C11" V 3350 6250 50  0000 L CNN
+F 1 "18pF" V 3350 5950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 6200 50  0001 C CNN
+F 3 "" H 3400 6200 50  0000 C CNN
+F 4 "28" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C180J5GACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1112-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "18pF" H 0   0   50  0001 C CNN "Value"
+	1    3400 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 571BCF37
+P 3000 7350
+F 0 "#PWR058" H 3000 7100 50  0001 C CNN
+F 1 "GND" H 3000 7200 50  0000 C CNN
+F 2 "" H 3000 7350 50  0000 C CNN
+F 3 "" H 3000 7350 50  0000 C CNN
+	1    3000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_Small Y2
+U 1 1 571BD221
+P 3850 6550
+F 0 "Y2" V 3850 6400 50  0000 C CNN
+F 1 "32.768KHz" V 3850 6850 50  0000 C CNN
+F 2 "" H 3850 6550 50  0001 C CNN
+F 3 "" H 3850 6550 50  0000 C CNN
+F 4 "21" H 0   0   50  0001 C CNN "FN"
+F 5 "OSC" H 0   0   50  0001 C CNN "Family"
+F 6 "CTS FREQUENCY" H 0   0   50  0001 C CNN "MFR"
+F 7 "TF322P32K7680" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "CTX1160CT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "32.768KHz" H 0   0   50  0001 C CNN "Value"
+	1    3850 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C13
+U 1 1 571BD503
+P 3400 6700
+F 0 "C13" V 3350 6750 50  0000 L CNN
+F 1 "18pF" V 3350 6450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 6700 50  0001 C CNN
+F 3 "" H 3400 6700 50  0000 C CNN
+F 4 "28" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C180J5GACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1112-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "18pF" H 0   0   50  0001 C CNN "Value"
+	1    3400 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 571BD55E
+P 3400 6400
+F 0 "C12" V 3450 6450 50  0000 L CNN
+F 1 "18pF" V 3450 6150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 6400 50  0001 C CNN
+F 3 "" H 3400 6400 50  0000 C CNN
+F 4 "28" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C180J5GACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1112-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "18pF" H 0   0   50  0001 C CNN "Value"
+	1    3400 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR059
+U 1 1 571BE42F
+P 5300 7350
+F 0 "#PWR059" H 5300 7100 50  0001 C CNN
+F 1 "GND" H 5300 7200 50  0000 C CNN
+F 2 "" H 5300 7350 50  0000 C CNN
+F 3 "" H 5300 7350 50  0000 C CNN
+	1    5300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES R46
+U 1 1 571BEEE5
+P 2750 7000
+F 0 "R46" H 2800 7050 50  0000 L CNN
+F 1 "10K" H 2800 6950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2750 7000 50  0001 C CNN
+F 3 "" H 2750 7000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    2750 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR060
+U 1 1 571BF0B8
+P 2750 7350
+F 0 "#PWR060" H 2750 7100 50  0001 C CNN
+F 1 "GND" H 2750 7200 50  0000 C CNN
+F 2 "" H 2750 7350 50  0000 C CNN
+F 3 "" H 2750 7350 50  0000 C CNN
+	1    2750 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES R44
+U 1 1 571BF28A
+P 2500 1000
+F 0 "R44" H 2550 1050 50  0000 L CNN
+F 1 "10K" H 2550 950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0000 C CNN
+F 4 "36" H 0   0   50  0001 C CNN "FN"
+F 5 "RES" H 0   0   50  0001 C CNN "Family"
+F 6 "ROHM" H 0   0   50  0001 C CNN "MFR"
+F 7 "MCR10ERTF1002" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "RHM10.0KCHCT-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "10.0K" H 0   0   50  0001 C CNN "Value"
+	1    2500 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C40
+U 1 1 5721CD49
+P 7550 1000
+F 0 "C40" H 7400 1050 50  0000 L BNN
+F 1 "0.1uF" H 7500 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 7550 1000 50  0001 C CNN
+F 3 "" H 7550 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    7550 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C41
+U 1 1 5721CE5A
+P 7900 1000
+F 0 "C41" H 7750 1050 50  0000 L BNN
+F 1 "0.1uF" H 7850 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 7900 1000 50  0001 C CNN
+F 3 "" H 7900 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    7900 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C44
+U 1 1 5721CEAA
+P 8950 1000
+F 0 "C44" H 8800 1050 50  0000 L BNN
+F 1 "0.1uF" H 8900 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 8950 1000 50  0001 C CNN
+F 3 "" H 8950 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    8950 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C45
+U 1 1 5721CEF7
+P 9300 1000
+F 0 "C45" H 9150 1050 50  0000 L BNN
+F 1 "0.1uF" H 9250 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 9300 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    9300 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C42
+U 1 1 5721D002
+P 8250 1000
+F 0 "C42" H 8100 1050 50  0000 L BNN
+F 1 "0.1uF" H 8200 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 8250 1000 50  0001 C CNN
+F 3 "" H 8250 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    8250 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C43
+U 1 1 5721D008
+P 8600 1000
+F 0 "C43" H 8450 1050 50  0000 L BNN
+F 1 "0.1uF" H 8550 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 8600 1000 50  0001 C CNN
+F 3 "" H 8600 1000 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    8600 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C39
+U 1 1 5721D036
+P 7000 1000
+F 0 "C39" H 6850 1050 50  0000 L BNN
+F 1 "1.0uF" H 6950 900 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 7000 1000 50  0001 C CNN
+F 3 "" H 7000 1000 50  0000 C CNN
+F 4 "27" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C105K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-7409-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "1.0uF" H 0   0   50  0001 C CNN "Value"
+	1    7000 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR061
+U 1 1 5721DBF6
+P 9300 1250
+F 0 "#PWR061" H 9300 1000 50  0001 C CNN
+F 1 "GND" H 9300 1100 50  0000 C CNN
+F 2 "" H 9300 1250 50  0000 C CNN
+F 3 "" H 9300 1250 50  0000 C CNN
+	1    9300 1250
+	1    0    0    -1  
+$EndComp
+Text HLabel 2150 2800 0    60   Output ~ 0
+COM0_RXDL
+Text HLabel 2150 2900 0    60   Input ~ 0
+COM0_TXDL
+Text HLabel 2150 3000 0    60   Output ~ 0
+COM0_CTSL
+Text HLabel 2150 3100 0    60   Input ~ 0
+COM0_RTSL
+Text HLabel 2150 3200 0    60   Output ~ 0
+COM0_DSRL
+Text HLabel 2150 3300 0    60   Input ~ 0
+COM0_DTRL
+Text HLabel 9700 2200 2    60   Output ~ 0
+COM1_RTSL
+Text HLabel 9700 1500 2    60   Output ~ 0
+COM1_TXDL
+Text HLabel 9700 2000 2    60   Output ~ 0
+COM1_DTRL
+Text HLabel 9700 1900 2    60   Input ~ 0
+COM1_DSRL
+Text HLabel 9700 1600 2    60   Input ~ 0
+COM1_RXDL
+Text HLabel 9700 1700 2    60   Input ~ 0
+COM1_CTSL
+Text HLabel 9700 2100 2    60   Input ~ 0
+COM1_RIL
+Text HLabel 9700 1800 2    60   Input ~ 0
+COM1_DCDL
+Text HLabel 9700 2700 2    60   Output ~ 0
+COM2_RTSL
+Text HLabel 9700 2400 2    60   Output ~ 0
+COM2_TXDL
+Text HLabel 9700 2500 2    60   Input ~ 0
+COM2_RXDL
+Text HLabel 9700 2600 2    60   Input ~ 0
+COM2_CTSL
+Text HLabel 9700 3500 2    60   Output ~ 0
+COM3_MOSI
+Text HLabel 9700 3200 2    60   Output ~ 0
+COM3_SCLK
+Text HLabel 9700 3300 2    60   Output ~ 0
+~COM3_SSEL
+Text HLabel 9700 3400 2    60   Input ~ 0
+COM3_MISO
+Text HLabel 9700 3700 2    60   Input ~ 0
+COM3_RXD
+Text HLabel 9700 3800 2    60   BiDi ~ 0
+COM3_SDA
+Text HLabel 9700 3900 2    60   Output ~ 0
+COM3_SCL
+Text HLabel 9700 3600 2    60   Output ~ 0
+COM3_TXD
+Text HLabel 9700 2900 2    60   Input ~ 0
+CAN_RD
+Text HLabel 9700 3000 2    60   Output ~ 0
+CAN_TD
+Text Notes 1200 3350 1    75   ~ 0
+COM0\nCONSOLE
+Text HLabel 9700 5400 2    60   Output ~ 0
+LAN_TXD0
+Text HLabel 9700 5500 2    60   Output ~ 0
+LAN_TXD1
+Text HLabel 9700 5800 2    60   Input ~ 0
+LAN_RXD0
+Text HLabel 9700 5600 2    60   Output ~ 0
+LAN_TXEN
+Text HLabel 9700 5900 2    60   Input ~ 0
+LAN_RXD1
+Text HLabel 9700 5700 2    60   Input ~ 0
+LAN_CRS
+Text HLabel 9700 6000 2    60   Input ~ 0
+LAN_RXER
+Text HLabel 9700 6100 2    60   Input ~ 0
+LAN_REF_CLK
+Text HLabel 9700 6200 2    60   Output ~ 0
+LAN_MDC
+Text HLabel 9700 6300 2    60   BiDi ~ 0
+LAN_MDIO
+Text HLabel 2050 1400 0    60   Input ~ 0
+BOOT_ISP
+Text HLabel 2150 4000 0    60   Input ~ 0
+PBCOL_SEN3
+Text HLabel 2150 3900 0    60   Input ~ 0
+PBCOL_SEN2
+Text HLabel 2150 3700 0    60   Input ~ 0
+PBCOL_SEN0
+Text HLabel 2150 3800 0    60   Input ~ 0
+PBCOL_SEN1
+Text HLabel 2150 3500 0    60   Output ~ 0
+PBROW_DRV0
+Text HLabel 2150 3600 0    60   Output ~ 0
+PBROW_DRV1
+Text HLabel 2150 2500 0    60   Input ~ 0
+~TRST
+Text HLabel 2150 2000 0    60   Input ~ 0
+~SRTS
+Text HLabel 2150 2200 0    60   Output ~ 0
+TDO
+Text HLabel 2150 2300 0    60   Input ~ 0
+TDI
+Text HLabel 2150 2400 0    60   Input ~ 0
+TMS
+Text HLabel 2150 2600 0    60   Input ~ 0
+TCK
+Text HLabel 2150 2100 0    60   Output ~ 0
+RTCK
+Text HLabel 2050 1200 0    60   Input ~ 0
+~RESET
+Text HLabel 2150 4200 0    60   BiDi ~ 0
+DISP_DB0
+Text HLabel 2150 4300 0    60   BiDi ~ 0
+DISP_DB1
+Text HLabel 2150 4400 0    60   BiDi ~ 0
+DISP_DB2
+Text HLabel 2150 4500 0    60   BiDi ~ 0
+DISP_DB3
+Text HLabel 2150 4600 0    60   Output ~ 0
+DISP_OP_ENA
+Text HLabel 2150 4700 0    60   Output ~ 0
+DISP_RW
+Text HLabel 2150 4800 0    60   Output ~ 0
+DISP_REGSEL
+Text HLabel 9700 4100 2    60   Output ~ 0
+ISP_SCLK
+Text HLabel 9700 4200 2    60   Output ~ 0
+~ISP_SSEL
+Text HLabel 9700 4300 2    60   Input ~ 0
+ISP_MISO
+Text HLabel 9700 4400 2    60   Output ~ 0
+ISP_MOSI
+Text HLabel 2150 5000 0    60   BiDi ~ 0
+CONFIG_SDA
+Text HLabel 2150 5100 0    60   Output ~ 0
+CONFIG_SCL
+Text HLabel 2150 5700 0    60   Output ~ 0
+MSD_MOSI
+Text HLabel 2150 5500 0    60   Output ~ 0
+MSD_SCLK
+Text HLabel 2150 5400 0    60   Output ~ 0
+~MSD_SSEL
+Text HLabel 2150 5600 0    60   Input ~ 0
+MSD_MISO
+Text HLabel 9700 5100 2    60   Output ~ 0
+USB_PWRD
+Text HLabel 9700 5000 2    60   Input ~ 0
+~USB_PPWR
+Text HLabel 9700 4900 2    60   Output ~ 0
+USB_OVRCR
+Text HLabel 9700 4600 2    60   Input ~ 0
+USB_CONNECT
+Text HLabel 9700 5200 2    60   Input ~ 0
+USB_VBUS
+Text HLabel 9700 4700 2    60   BiDi ~ 0
+USB_DP
+Text HLabel 9700 4800 2    60   BiDi ~ 0
+USB_DM
+Text HLabel 2050 1600 0    60   UnSpc ~ 0
+VBATT
+Text HLabel 2150 5300 0    60   Input ~ 0
+~MSD_SENSE
+Text Notes 1200 4050 1    75   ~ 0
+PUSH\nBUTTONS
+Text Notes 1200 4850 1    75   ~ 0
+LCD\nDISPLAY
+Text Notes 1200 5750 1    75   ~ 0
+SD CARD
+Text Notes 1200 5150 2    75   ~ 0
+CONFIG\nPROCESSOR
+Text Notes 1200 2650 1    75   ~ 0
+JTAG\nPROGRAMMING
+Text Notes 10700 1950 3    75   ~ 0
+COM1
+Text Notes 10700 2450 3    75   ~ 0
+COM2
+Text Notes 10600 3050 0    75   ~ 0
+CANBUS
+Text Notes 10700 3650 3    75   ~ 0
+COM3
+Text Notes 10700 4450 1    75   ~ 0
+ISP
+Text Notes 10700 5250 1    75   ~ 0
+USB
+Text Notes 10700 6350 1    75   ~ 0
+ETHERNET LAN
+Wire Notes Line
+	1250 3350 1250 2750
+Wire Wire Line
+	2150 2300 4400 2300
+Wire Wire Line
+	3500 1100 3500 2300
+Wire Wire Line
+	2150 2200 4400 2200
+Wire Wire Line
+	3750 1100 3750 2200
+Wire Wire Line
+	4400 2100 2150 2100
+Wire Wire Line
+	2150 2400 4400 2400
+Wire Wire Line
+	3250 1100 3250 2400
+Wire Wire Line
+	2150 2600 4400 2600
+Wire Wire Line
+	2150 2500 4400 2500
+Wire Wire Line
+	3000 1100 3000 2500
+Wire Wire Line
+	3000 750  3000 900 
+Wire Wire Line
+	2500 750  9300 750 
+Wire Wire Line
+	3250 900  3250 750 
+Wire Wire Line
+	3500 900  3500 750 
+Wire Wire Line
+	3750 900  3750 750 
+Wire Wire Line
+	2050 1200 4400 1200
+Wire Wire Line
+	2750 900  2750 750 
+Wire Wire Line
+	2750 1100 2750 2000
+Wire Wire Line
+	2750 2000 2150 2000
+Wire Wire Line
+	2150 2800 4400 2800
+Wire Wire Line
+	2150 2900 4400 2900
+Wire Wire Line
+	2150 3000 4400 3000
+Wire Wire Line
+	2150 3100 4400 3100
+Wire Wire Line
+	2150 3200 4400 3200
+Wire Wire Line
+	2150 3300 4400 3300
+Wire Wire Line
+	2150 3500 4400 3500
+Wire Wire Line
+	2150 3600 4400 3600
+Wire Wire Line
+	2150 3700 4400 3700
+Wire Wire Line
+	2150 3800 4400 3800
+Wire Wire Line
+	2150 3900 4400 3900
+Wire Wire Line
+	2150 4000 4400 4000
+Wire Wire Line
+	2150 4200 4400 4200
+Wire Wire Line
+	2150 4300 4400 4300
+Wire Wire Line
+	2150 4400 4400 4400
+Wire Wire Line
+	2150 4500 4400 4500
+Wire Wire Line
+	2150 4600 4400 4600
+Wire Wire Line
+	2150 4700 4400 4700
+Wire Wire Line
+	2150 4800 4400 4800
+Wire Wire Line
+	2150 5000 4400 5000
+Wire Wire Line
+	2150 5100 4400 5100
+Wire Wire Line
+	2150 5400 4400 5400
+Wire Wire Line
+	2150 5500 4400 5500
+Wire Wire Line
+	2150 5600 4400 5600
+Wire Wire Line
+	2150 5700 4400 5700
+Wire Wire Line
+	6900 1500 9700 1500
+Wire Wire Line
+	6900 1600 9700 1600
+Wire Wire Line
+	6900 1700 9700 1700
+Wire Wire Line
+	6900 1800 9700 1800
+Wire Wire Line
+	6900 1900 9700 1900
+Wire Wire Line
+	6900 2000 9700 2000
+Wire Wire Line
+	6900 2100 9700 2100
+Wire Wire Line
+	6900 2200 9700 2200
+Wire Wire Line
+	6900 2400 9700 2400
+Wire Wire Line
+	6900 2500 9700 2500
+Wire Wire Line
+	6900 2600 9700 2600
+Wire Wire Line
+	6900 2700 9700 2700
+Wire Wire Line
+	6900 2900 9700 2900
+Wire Wire Line
+	6900 3000 9700 3000
+Wire Wire Line
+	6900 3200 9700 3200
+Wire Wire Line
+	6900 3300 9700 3300
+Wire Wire Line
+	6900 3400 9700 3400
+Wire Wire Line
+	6900 3500 9700 3500
+Wire Wire Line
+	6900 3600 9700 3600
+Wire Wire Line
+	6900 3700 9700 3700
+Wire Wire Line
+	6900 3800 9700 3800
+Wire Wire Line
+	6900 3900 9700 3900
+Wire Wire Line
+	6900 4100 9700 4100
+Wire Wire Line
+	6900 4200 9700 4200
+Wire Wire Line
+	6900 4300 9700 4300
+Wire Wire Line
+	6900 4400 9700 4400
+Wire Wire Line
+	6900 4600 9700 4600
+Wire Wire Line
+	6900 4700 9700 4700
+Wire Wire Line
+	6900 4900 9700 4900
+Wire Wire Line
+	6900 5000 9700 5000
+Wire Wire Line
+	6900 5100 9700 5100
+Wire Wire Line
+	6900 5200 9700 5200
+Wire Wire Line
+	6900 5400 9700 5400
+Wire Wire Line
+	6900 5500 9700 5500
+Wire Wire Line
+	6900 5600 9700 5600
+Wire Wire Line
+	6900 5700 9700 5700
+Wire Wire Line
+	6900 5800 9700 5800
+Wire Wire Line
+	6900 5900 9700 5900
+Wire Wire Line
+	6900 6000 9700 6000
+Wire Wire Line
+	6900 6100 9700 6100
+Wire Wire Line
+	6900 6200 9700 6200
+Wire Wire Line
+	6900 6300 9700 6300
+Wire Wire Line
+	3850 5950 3850 5900
+Wire Wire Line
+	3500 5900 4400 5900
+Wire Wire Line
+	3850 6150 3850 6200
+Wire Wire Line
+	3500 6200 4400 6200
+Wire Wire Line
+	3300 5900 3000 5900
+Wire Wire Line
+	3000 5900 3000 7350
+Wire Wire Line
+	3300 6200 3000 6200
+Wire Wire Line
+	3500 6400 4400 6400
+Wire Wire Line
+	3850 6450 3850 6400
+Wire Wire Line
+	3850 6650 3850 6700
+Wire Wire Line
+	3500 6700 4400 6700
+Wire Wire Line
+	3300 6400 3000 6400
+Wire Wire Line
+	3300 6700 3000 6700
+Wire Wire Line
+	5300 7000 5300 7350
+Wire Wire Line
+	5300 7200 6000 7200
+Wire Wire Line
+	6000 7200 6000 7000
+Wire Wire Line
+	5400 7000 5400 7200
+Wire Wire Line
+	5500 7000 5500 7200
+Wire Wire Line
+	5600 7000 5600 7200
+Wire Wire Line
+	5700 7000 5700 7200
+Wire Wire Line
+	5800 7000 5800 7200
+Wire Wire Line
+	2050 1400 4400 1400
+Wire Wire Line
+	2750 2600 2750 6900
+Wire Wire Line
+	2750 7100 2750 7350
+Wire Wire Line
+	2500 900  2500 750 
+Wire Wire Line
+	2500 1100 2500 1400
+Wire Wire Line
+	4650 750  4650 700 
+Wire Wire Line
+	5300 800  5300 750 
+Wire Wire Line
+	5400 800  5400 750 
+Wire Wire Line
+	5500 800  5500 750 
+Wire Wire Line
+	5600 800  5600 750 
+Wire Wire Line
+	5800 800  5800 750 
+Wire Wire Line
+	5900 750  5900 800 
+Wire Wire Line
+	6100 750  6100 800 
+Wire Wire Line
+	2050 1600 4400 1600
+Wire Wire Line
+	6900 4800 9700 4800
+Wire Wire Line
+	2150 5300 4400 5300
+Wire Wire Line
+	7000 1100 7000 1200
+Wire Wire Line
+	7000 1200 9300 1200
+Wire Wire Line
+	9300 1100 9300 1250
+Wire Wire Line
+	8950 1100 8950 1200
+Wire Wire Line
+	8600 1100 8600 1200
+Wire Wire Line
+	8250 1100 8250 1200
+Wire Wire Line
+	7900 1100 7900 1200
+Wire Wire Line
+	7550 1100 7550 1200
+Wire Wire Line
+	7000 750  7000 900 
+Wire Wire Line
+	9300 750  9300 900 
+Wire Wire Line
+	8950 900  8950 750 
+Wire Wire Line
+	8600 900  8600 750 
+Wire Wire Line
+	8250 900  8250 750 
+Wire Wire Line
+	7900 900  7900 750 
+Wire Wire Line
+	7550 900  7550 750 
+Wire Notes Line
+	1250 4050 1250 3450
+Wire Notes Line
+	1250 4850 1250 4150
+Wire Notes Line
+	1250 5750 1250 5250
+Wire Notes Line
+	1250 5150 1250 4950
+Wire Notes Line
+	1250 2650 1250 1850
+Wire Notes Line
+	10550 2250 10550 1450
+Wire Notes Line
+	10550 2750 10550 2350
+Wire Notes Line
+	10550 3050 10550 2850
+Wire Notes Line
+	10550 3950 10550 3150
+Wire Notes Line
+	10550 4450 10550 4050
+Wire Notes Line
+	10550 5250 10550 4550
+Wire Notes Line
+	10550 6350 10550 5350
+Connection ~ 3500 2300
+Connection ~ 3750 2200
+Connection ~ 3250 2400
+Connection ~ 3000 2500
+Connection ~ 3250 750 
+Connection ~ 3500 750 
+Connection ~ 3750 750 
+Connection ~ 3000 750 
+Connection ~ 2750 1200
+Connection ~ 3850 5900
+Connection ~ 3850 6200
+Connection ~ 3000 6200
+Connection ~ 3850 6400
+Connection ~ 3850 6700
+Connection ~ 3000 6400
+Connection ~ 3000 6700
+Connection ~ 5400 7200
+Connection ~ 5500 7200
+Connection ~ 5600 7200
+Connection ~ 5700 7200
+Connection ~ 5800 7200
+Connection ~ 5300 7200
+Connection ~ 2750 2600
+Connection ~ 2750 750 
+Connection ~ 2500 1400
+Connection ~ 4650 750 
+Connection ~ 5300 750 
+Connection ~ 5400 750 
+Connection ~ 5500 750 
+Connection ~ 5600 750 
+Connection ~ 5800 750 
+Connection ~ 5900 750 
+Connection ~ 8950 1200
+Connection ~ 8600 1200
+Connection ~ 8250 1200
+Connection ~ 7900 1200
+Connection ~ 7550 1200
+Connection ~ 6100 750 
+Connection ~ 7000 750 
+Connection ~ 8950 750 
+Connection ~ 8600 750 
+Connection ~ 8250 750 
+Connection ~ 7900 750 
+Connection ~ 7550 750 
+Connection ~ 9300 1200
+NoConn ~ 4400 1300
+NoConn ~ 4400 1800
+NoConn ~ 4400 1900
+$EndSCHEMATC

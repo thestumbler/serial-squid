@@ -1,0 +1,609 @@
+EESchema Schematic File Version 2
+LIBS:my-maxim
+LIBS:my-conn
+LIBS:my-gates
+LIBS:my-display
+LIBS:my-cmos4000
+LIBS:my-osc
+LIBS:my-interface
+LIBS:my-74xx
+LIBS:my-ftdi
+LIBS:my-microchip
+LIBS:my-regul
+LIBS:my-power
+LIBS:my-nxp
+LIBS:my-device
+LIBS:squid-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 11
+Title "SERIAL SQUID"
+Date "2016-05-02"
+Rev "-"
+Comp "Tratech Solutions, Inc., Seoul, South Korea"
+Comment1 "Email: rclott@tratechsol.com"
+Comment2 "Author: Chris Lott"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC595 U13
+U 1 1 571F25E6
+P 4950 1550
+F 0 "U13" H 4600 2150 50  0000 C CNN
+F 1 "74HCT595" H 4700 925 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 4950 1550 50  0001 C CNN
+F 3 "" H 4950 1550 50  0000 C CNN
+F 4 "10" H 0   0   50  0001 C CNN "FN"
+F 5 "IC" H 0   0   50  0001 C CNN "Family"
+F 6 "NXP SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFR"
+F 7 "74HCT595PW" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "568-1561-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "74HCT595" H 0   0   50  0001 C CNN "Value"
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U14
+U 1 1 571F2750
+P 4950 2900
+F 0 "U14" H 4600 3500 50  0000 C CNN
+F 1 "74HCT595" H 4700 2275 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 4950 2900 50  0001 C CNN
+F 3 "" H 4950 2900 50  0000 C CNN
+F 4 "10" H 0   0   50  0001 C CNN "FN"
+F 5 "IC" H 0   0   50  0001 C CNN "Family"
+F 6 "NXP SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFR"
+F 7 "74HCT595PW" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "568-1561-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "74HCT595" H 0   0   50  0001 C CNN "Value"
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U15
+U 1 1 571F27A0
+P 4950 4250
+F 0 "U15" H 4600 4850 50  0000 C CNN
+F 1 "74HCT595" H 4700 3625 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 4950 4250 50  0001 C CNN
+F 3 "" H 4950 4250 50  0000 C CNN
+F 4 "10" H 0   0   50  0001 C CNN "FN"
+F 5 "IC" H 0   0   50  0001 C CNN "Family"
+F 6 "NXP SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFR"
+F 7 "74HCT595PW" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "568-1561-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "74HCT595" H 0   0   50  0001 C CNN "Value"
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U16
+U 1 1 571F27EF
+P 4950 5600
+F 0 "U16" H 4600 6200 50  0000 C CNN
+F 1 "74HCT595" H 4700 4975 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 4950 5600 50  0001 C CNN
+F 3 "" H 4950 5600 50  0000 C CNN
+F 4 "10" H 0   0   50  0001 C CNN "FN"
+F 5 "IC" H 0   0   50  0001 C CNN "Family"
+F 6 "NXP SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFR"
+F 7 "74HCT595PW" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "568-1561-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "74HCT595" H 0   0   50  0001 C CNN "Value"
+	1    4950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR053
+U 1 1 571F29E3
+P 4250 950
+F 0 "#PWR053" H 4250 800 50  0001 C CNN
+F 1 "+5V" H 4250 1090 50  0000 C CNN
+F 2 "" H 4250 950 50  0000 C CNN
+F 3 "" H 4250 950 50  0000 C CNN
+	1    4250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR054
+U 1 1 571F2BDA
+P 4150 6600
+F 0 "#PWR054" H 4150 6350 50  0001 C CNN
+F 1 "GND" H 4150 6450 50  0000 C CNN
+F 2 "" H 4150 6600 50  0000 C CNN
+F 3 "" H 4150 6600 50  0000 C CNN
+	1    4150 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C35
+U 1 1 5721A32F
+P 1250 3700
+F 0 "C35" H 1050 3750 50  0000 L BNN
+F 1 "0.1uF" H 1200 3600 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 1250 3700 50  0001 C CNN
+F 3 "" H 1250 3700 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    1250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C36
+U 1 1 5721A366
+P 1600 3700
+F 0 "C36" H 1400 3750 50  0000 L BNN
+F 1 "0.1uF" H 1550 3600 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 1600 3700 50  0001 C CNN
+F 3 "" H 1600 3700 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    1600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C37
+U 1 1 5721A392
+P 2000 3700
+F 0 "C37" H 1800 3750 50  0000 L BNN
+F 1 "0.1uF" H 1950 3600 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 2000 3700 50  0001 C CNN
+F 3 "" H 2000 3700 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    2000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C38
+U 1 1 5721A3C7
+P 2400 3700
+F 0 "C38" H 2200 3750 50  0000 L BNN
+F 1 "0.1uF" H 2350 3600 50  0000 R BNN
+F 2 "Capacitors_SMD:C_0805" H 2400 3700 50  0001 C CNN
+F 3 "" H 2400 3700 50  0000 C CNN
+F 4 "25" H 0   0   50  0001 C CNN "FN"
+F 5 "CAP" H 0   0   50  0001 C CNN "Family"
+F 6 "KEMET" H 0   0   50  0001 C CNN "MFR"
+F 7 "C0805C104K5RACTU" H 0   0   50  0001 C CNN "PN"
+F 8 "Digikey" H 0   0   50  0001 C CNN "VENDOR"
+F 9 "399-1170-1-ND" H 0   0   50  0001 C CNN "VSN"
+F 10 "0.1uF" H 0   0   50  0001 C CNN "Value"
+	1    2400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR055
+U 1 1 5721A7F0
+P 1800 4200
+F 0 "#PWR055" H 1800 3950 50  0001 C CNN
+F 1 "GND" H 1800 4050 50  0000 C CNN
+F 2 "" H 1800 4200 50  0000 C CNN
+F 3 "" H 1800 4200 50  0000 C CNN
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR056
+U 1 1 5721A814
+P 1800 3200
+F 0 "#PWR056" H 1800 3050 50  0001 C CNN
+F 1 "+5V" H 1800 3340 50  0000 C CNN
+F 2 "" H 1800 3200 50  0000 C CNN
+F 3 "" H 1800 3200 50  0000 C CNN
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+Text Label 2450 1250 0    60   ~ 0
+SHIFT_IN
+Text Label 2450 1450 0    60   ~ 0
+SHIFT_CLK
+Text Label 2450 1750 0    60   ~ 0
+SHIFT_LOAD
+Text Label 2450 1550 0    60   ~ 0
+~SHIFT_RESET
+Text Label 2450 1850 0    60   ~ 0
+~SHIFT_OE
+Text Label 6250 1100 0    60   ~ 0
+CFG0
+Text Label 6250 1200 0    60   ~ 0
+CFG1
+Text Label 6250 1300 0    60   ~ 0
+CFG2
+Text Label 6250 1400 0    60   ~ 0
+CFG3
+Text Label 6250 1500 0    60   ~ 0
+CFG4
+Text Label 6250 1600 0    60   ~ 0
+CFG5
+Text Label 6250 1700 0    60   ~ 0
+CFG6
+Text Label 6250 1800 0    60   ~ 0
+CFG7
+Text Label 6250 2450 0    60   ~ 0
+CFG8
+Text Label 6250 2550 0    60   ~ 0
+CFG9
+Text Label 6250 2650 0    60   ~ 0
+CFG10
+Text Label 6250 2750 0    60   ~ 0
+CFG11
+Text Label 6250 2850 0    60   ~ 0
+CFG12
+Text Label 6250 2950 0    60   ~ 0
+CFG13
+Text Label 6250 3050 0    60   ~ 0
+CFG14
+Text Label 6250 3150 0    60   ~ 0
+CFG15
+Text Label 6250 3800 0    60   ~ 0
+CFG16
+Text Label 6250 3900 0    60   ~ 0
+CFG17
+Text Label 6250 4000 0    60   ~ 0
+CFG18
+Text Label 6250 4100 0    60   ~ 0
+CFG19
+Text Label 6250 4200 0    60   ~ 0
+CFG20
+Text Label 6250 4300 0    60   ~ 0
+CFG21
+Text Label 6250 4400 0    60   ~ 0
+CFG22
+Text Label 6250 4500 0    60   ~ 0
+CFG23
+Text Label 6250 5150 0    60   ~ 0
+CFG24
+Text Label 6250 5250 0    60   ~ 0
+CFG25
+Text Label 6250 5350 0    60   ~ 0
+CFG26
+Text Label 6250 5450 0    60   ~ 0
+CFG27
+Text Label 6250 5550 0    60   ~ 0
+CFG28
+Text Label 6250 5650 0    60   ~ 0
+CFG29
+Text Label 6250 5750 0    60   ~ 0
+CFG30
+Text Label 6250 5850 0    60   ~ 0
+CFG31
+Text HLabel 9800 900  2    60   Output ~ 0
+CFG[0..31]
+Text HLabel 1850 1250 0    60   Input ~ 0
+SHIFT_IN
+Text HLabel 1850 1450 0    60   Input ~ 0
+SHIFT_CLK
+Text HLabel 1850 1550 0    60   Input ~ 0
+~SHIFT_RESET
+Text HLabel 1850 1750 0    60   Input ~ 0
+SHIFT_LOAD
+Text HLabel 1850 1850 0    60   Input ~ 0
+~SHIFT_OE
+Text HLabel 1850 2000 0    60   Output ~ 0
+SHIFT_OUT
+Text Label 8100 5550 0    60   ~ 0
+CFG28
+Text Label 8100 5650 0    60   ~ 0
+CFG29
+Text Label 8100 5750 0    60   ~ 0
+CFG30
+Text Label 8100 5850 0    60   ~ 0
+CFG31
+Wire Wire Line
+	1850 1250 4350 1250
+Wire Wire Line
+	1850 1450 4350 1450
+Wire Wire Line
+	1850 1750 4350 1750
+Wire Wire Line
+	1850 1550 4350 1550
+Wire Wire Line
+	1850 1850 4350 1850
+Wire Wire Line
+	3900 2600 4350 2600
+Wire Wire Line
+	4350 2800 3700 2800
+Wire Wire Line
+	4350 2900 3600 2900
+Wire Wire Line
+	4350 3100 3500 3100
+Wire Wire Line
+	4350 3200 3400 3200
+Wire Wire Line
+	3900 3950 4350 3950
+Wire Wire Line
+	3700 4150 4350 4150
+Wire Wire Line
+	3600 4250 4350 4250
+Wire Wire Line
+	3500 4450 4350 4450
+Wire Wire Line
+	3400 4550 4350 4550
+Wire Wire Line
+	3900 5300 4350 5300
+Wire Wire Line
+	3700 5500 4350 5500
+Wire Wire Line
+	3600 5600 4350 5600
+Wire Wire Line
+	3500 5800 4350 5800
+Wire Wire Line
+	3400 5900 4350 5900
+Wire Wire Line
+	3900 2600 3900 2200
+Wire Wire Line
+	3900 2200 5950 2200
+Wire Wire Line
+	5550 1800 6750 1800
+Wire Wire Line
+	5950 2200 5950 1800
+Wire Wire Line
+	5550 3150 6750 3150
+Wire Wire Line
+	5950 3150 5950 3550
+Wire Wire Line
+	5950 3550 3900 3550
+Wire Wire Line
+	3900 3550 3900 3950
+Wire Wire Line
+	5550 4500 6750 4500
+Wire Wire Line
+	5950 4500 5950 4900
+Wire Wire Line
+	5950 4900 3900 4900
+Wire Wire Line
+	3900 4900 3900 5300
+Wire Wire Line
+	3400 1850 3400 5900
+Wire Wire Line
+	3500 1750 3500 5800
+Wire Wire Line
+	3600 1550 3600 5600
+Wire Wire Line
+	3700 1450 3700 5500
+Wire Bus Line
+	6850 900  6850 5850
+Wire Bus Line
+	6850 900  9800 900 
+Wire Wire Line
+	5550 1100 6750 1100
+Wire Wire Line
+	5550 1200 6750 1200
+Wire Wire Line
+	5550 1300 6750 1300
+Wire Wire Line
+	5550 1400 6750 1400
+Wire Wire Line
+	5550 1500 6750 1500
+Wire Wire Line
+	5550 1600 6750 1600
+Wire Wire Line
+	5550 1700 6750 1700
+Wire Wire Line
+	5550 2450 6750 2450
+Wire Wire Line
+	5550 2550 6750 2550
+Wire Wire Line
+	5550 2650 6750 2650
+Wire Wire Line
+	5550 2750 6750 2750
+Wire Wire Line
+	5550 2850 6750 2850
+Wire Wire Line
+	5550 2950 6750 2950
+Wire Wire Line
+	5550 3050 6750 3050
+Wire Wire Line
+	5550 3800 6750 3800
+Wire Wire Line
+	5550 3900 6750 3900
+Wire Wire Line
+	5550 4000 6750 4000
+Wire Wire Line
+	5550 4100 6750 4100
+Wire Wire Line
+	5550 4200 6750 4200
+Wire Wire Line
+	5550 4300 6750 4300
+Wire Wire Line
+	5550 4400 6750 4400
+Wire Wire Line
+	5550 5850 6750 5850
+Wire Wire Line
+	5550 5150 6750 5150
+Wire Wire Line
+	5550 5250 6750 5250
+Wire Wire Line
+	5550 5350 6750 5350
+Wire Wire Line
+	5550 5450 6750 5450
+Wire Wire Line
+	5550 5550 6750 5550
+Wire Wire Line
+	5550 5650 6750 5650
+Wire Wire Line
+	5550 5750 6750 5750
+Wire Wire Line
+	5550 6050 5950 6050
+Wire Wire Line
+	5950 6050 5950 6400
+Wire Wire Line
+	5950 6400 3150 6400
+Wire Wire Line
+	3150 6400 3150 2000
+Wire Wire Line
+	3150 2000 1850 2000
+Wire Wire Line
+	8100 5850 8600 5850
+Wire Wire Line
+	8100 5550 8600 5550
+Wire Wire Line
+	8100 5650 8600 5650
+Wire Wire Line
+	8100 5750 8600 5750
+Wire Wire Line
+	4350 1050 4250 1050
+Wire Wire Line
+	4250 950  4250 5100
+Wire Wire Line
+	4250 5100 4350 5100
+Wire Wire Line
+	4350 2400 4250 2400
+Wire Wire Line
+	4350 3750 4250 3750
+Wire Wire Line
+	4150 6100 4350 6100
+Wire Wire Line
+	4150 2050 4150 6600
+Wire Wire Line
+	4350 2050 4150 2050
+Wire Wire Line
+	4350 3400 4150 3400
+Wire Wire Line
+	4350 4750 4150 4750
+Wire Wire Line
+	1250 4050 2400 4050
+Wire Wire Line
+	1250 3800 1250 4050
+Wire Wire Line
+	1250 3600 1250 3350
+Wire Wire Line
+	1250 3350 2400 3350
+Wire Wire Line
+	1600 3600 1600 3350
+Wire Wire Line
+	2000 3600 2000 3350
+Wire Wire Line
+	2400 3350 2400 3600
+Wire Wire Line
+	1600 3800 1600 4050
+Wire Wire Line
+	2000 3800 2000 4050
+Wire Wire Line
+	2400 4050 2400 3800
+Wire Wire Line
+	1800 4050 1800 4200
+Wire Wire Line
+	1800 3200 1800 3350
+Entry Wire Line
+	6750 1100 6850 1000
+Entry Wire Line
+	6750 1200 6850 1100
+Entry Wire Line
+	6750 1300 6850 1200
+Entry Wire Line
+	6750 1400 6850 1300
+Entry Wire Line
+	6750 1500 6850 1400
+Entry Wire Line
+	6750 1600 6850 1500
+Entry Wire Line
+	6750 1700 6850 1600
+Entry Wire Line
+	6750 1800 6850 1700
+Entry Wire Line
+	6750 2450 6850 2350
+Entry Wire Line
+	6750 2550 6850 2450
+Entry Wire Line
+	6750 2650 6850 2550
+Entry Wire Line
+	6750 2750 6850 2650
+Entry Wire Line
+	6750 2850 6850 2750
+Entry Wire Line
+	6750 2950 6850 2850
+Entry Wire Line
+	6750 3050 6850 2950
+Entry Wire Line
+	6750 3150 6850 3050
+Entry Wire Line
+	6750 3800 6850 3700
+Entry Wire Line
+	6750 3900 6850 3800
+Entry Wire Line
+	6750 4000 6850 3900
+Entry Wire Line
+	6750 4100 6850 4000
+Entry Wire Line
+	6750 4200 6850 4100
+Entry Wire Line
+	6750 4300 6850 4200
+Entry Wire Line
+	6750 4400 6850 4300
+Entry Wire Line
+	6750 4500 6850 4400
+Entry Wire Line
+	6750 5150 6850 5050
+Entry Wire Line
+	6750 5250 6850 5150
+Entry Wire Line
+	6750 5350 6850 5250
+Entry Wire Line
+	6750 5450 6850 5350
+Entry Wire Line
+	6750 5550 6850 5450
+Entry Wire Line
+	6750 5650 6850 5550
+Entry Wire Line
+	6750 5750 6850 5650
+Entry Wire Line
+	6750 5850 6850 5750
+Connection ~ 3400 4550
+Connection ~ 3400 1850
+Connection ~ 3400 3200
+Connection ~ 3500 4450
+Connection ~ 3600 4250
+Connection ~ 3700 4150
+Connection ~ 3500 1750
+Connection ~ 3500 3100
+Connection ~ 3600 1550
+Connection ~ 3600 2900
+Connection ~ 3700 1450
+Connection ~ 3700 2800
+Connection ~ 5950 1800
+Connection ~ 5950 3150
+Connection ~ 5950 4500
+Connection ~ 4250 1050
+Connection ~ 4250 2400
+Connection ~ 4250 3750
+Connection ~ 4150 6100
+Connection ~ 4150 3400
+Connection ~ 4150 4750
+Connection ~ 1600 3350
+Connection ~ 2000 3350
+Connection ~ 1600 4050
+Connection ~ 2000 4050
+Connection ~ 1800 4050
+Connection ~ 1800 3350
+NoConn ~ 5550 2000
+NoConn ~ 5550 3350
+NoConn ~ 5550 4700
+NoConn ~ 8600 5550
+NoConn ~ 8600 5650
+NoConn ~ 8600 5750
+NoConn ~ 8600 5850
+$EndSCHEMATC
