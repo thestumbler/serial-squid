@@ -1,6 +1,6 @@
 FILE="../.archive/sch_$(date +%Y%m%d_%H%M%S).tgz"
 tar -czv \
-      --exclude-backup --exclude-vcs \
+      --exclude='*.bak' \
       --exclude='*.o' \
       --exclude='*.obj' \
       --exclude='*.exe' \

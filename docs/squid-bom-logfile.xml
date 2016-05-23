@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recoveryLog xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <logFileName>Repair Result to squid-bom0.xml</logFileName>
+  <summary>Errors were detected in file '/files/proj/squid/serial-squid/docs/squid-bom.xlsx'</summary><removedRecords summary="Following is a list of removed records:"><removedRecord>Removed Records: Named range from /xl/workbook.xml (Workbook)</removedRecord></removedRecords></recoveryLog>

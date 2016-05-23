@@ -1,0 +1,5 @@
+Surface mount Type A USB connector
+Check pull-ups on each serial port bus
+Supply power from COM0 optionally
+change PS/2 to a right-angle jack?
+
